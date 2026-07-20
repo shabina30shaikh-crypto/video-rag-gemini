@@ -1,76 +1,115 @@
-# 🎬 Video RAG with Gemini
+# 🎬 Video RAG Chatbot with Gemini
 
-A Streamlit demo that allows you to upload videos and chat with them using Google's Gemini AI with multimodal capabilities.
+An AI-powered video question-answering application built with Streamlit and Google's Gemini API.
 
-## Features
+The application allows users to upload videos and ask natural-language questions about their content. Gemini's multimodal capabilities analyze the video and generate context-aware responses based on the visual and temporal information in the video.
 
-- 📹 **Video Upload**: Support for multiple video formats (MP4, AVI, MOV, MKV, WEBM)
-- 🤖 **AI-Powered Chat**: Ask questions about your video content using Gemini's advanced video understanding
-- 💬 **Interactive Interface**: Clean chat interface with streaming responses
-- 🔄 **Session Management**: Maintain chat history and video context
-- ⚡ **Real-time Processing**: Upload and process videos with progress feedback
+## 🚀 Features
 
-## Setup
+- 📹 Upload videos in multiple formats
+- 🤖 Ask natural-language questions about video content
+- 🧠 Multimodal video understanding using Google Gemini
+- 💬 Interactive chat interface
+- 🔄 Maintains conversation history during the session
+- ⚡ Video processing with progress feedback
+- 🔐 API key entered securely at runtime
+- 🖥️ Simple Streamlit web interface
 
-1. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🧠 How It Works
 
-2. **Get Gemini API Key**
-   - Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
-   - Create a new API key
-   - Keep it secure - you'll enter it in the app
+```text
+Upload Video
+     ↓
+Video Upload to Gemini File API
+     ↓
+Video Processing
+     ↓
+User Asks a Question
+     ↓
+Gemini Multimodal Analysis
+     ↓
+Context-Aware AI Response
+🛠️ Tech Stack
+Python
+Streamlit
+Google Gemini API
+Google Generative AI SDK
+Python-dotenv
+Pillow
+⚙️ Installation
+1. Clone the Repository
+git clone https://github.com/shabina30shaikh-crypto/video-rag-gemini.git
+cd video-rag-gemini
+2. Create a Virtual Environment
+python -m venv venv
+3. Activate the Virtual Environment
 
-3. **Run the Application**
-   ```bash
-   streamlit run app.py
-   ```
+Windows PowerShell:
 
-## Usage
+.\venv\Scripts\Activate.ps1
+4. Install Dependencies
+pip install -r requirements.txt
+🔑 Gemini API Key Setup
+Create a Gemini API key using Google AI Studio.
+Start the application.
+Enter your API key in the application sidebar.
 
-1. **Enter API Key**: Input your Gemini API key in the sidebar
-2. **Upload Video**: Choose a video file (supported formats listed above)
-3. **Wait for Processing**: The video will be uploaded and processed by Gemini
-4. **Start Chatting**: Ask questions about your video content!
+⚠️ Security Note: Never commit your actual API key to GitHub. Do not store API keys directly in source code.
 
-## Example Questions
+▶️ Run the Application
+streamlit run app.py
 
-- "What is happening in this video?"
-- "Summarize the main events"
-- "Who are the people in this video?"
-- "What objects can you see?"
-- "Describe the setting and environment"
-- "What actions are taking place?"
+Then open the local URL displayed in the terminal:
 
-## Technical Details
+http://localhost:8501
+💬 Example Questions
 
-- **Video Processing**: Uses Gemini's File API for video upload and processing
-- **Multimodal AI**: Combines video understanding with natural language processing
-- **File Size Limits**: Large files (>100MB) may take longer to process
-- **Supported Formats**: MP4, AVI, MOV, MKV, WEBM
+After uploading a video, you can ask questions such as:
 
-## Limitations
+What is happening in this video?
+Summarize the main events.
+What objects can you see?
+Describe the setting and environment.
+What actions are taking place?
+Explain the main content of the video.
+What are the important events in this video?
+🔧 Technical Details
+Video Processing: Videos are uploaded and processed using the Gemini File API.
+Multimodal AI: Gemini analyzes video content together with natural-language questions.
+Session Management: Chat history and video context are maintained during the active session.
+Supported Formats: MP4, AVI, MOV, MKV, and WEBM.
+⚠️ Limitations
+Processing time depends on video size and complexity.
+Large videos may take longer to upload and process.
+API usage limits depend on the Gemini API plan.
+Some video formats may have compatibility limitations.
+🐛 Troubleshooting
+Upload Fails
 
-- Video processing time depends on file size and complexity
-- Large files may fail to upload or process
-- API rate limits may apply based on your Gemini API plan
-- Some video formats may not be supported
+Check the video format and file size.
 
-## Troubleshooting
+Processing Takes Too Long
 
-- **Upload Fails**: Check video format and file size
-- **Processing Stuck**: Wait a few minutes, large files take time
-- **API Errors**: Verify your API key is correct and has sufficient quota
-- **No Response**: Try refreshing the page and re-uploading the video
+Large videos may require additional processing time.
 
-## Built With
+API Errors
 
-- [Streamlit](https://streamlit.io/) - Web app framework
-- [Google Gemini API](https://ai.google.dev/gemini-api) - Multimodal AI capabilities
-- [Python](https://python.org/) - Backend processing
+Verify that your Gemini API key is correct and has sufficient quota.
 
----
+No Response
 
-*Part of the AI Engineering Hub - Building practical AI applications*
+Try refreshing the application and uploading the video again.
 
+🌟 Future Improvements
+Support for additional video formats
+Conversation memory across sessions
+Video timestamp-based answers
+Automatic video summarization
+Multi-video question answering
+Cloud deployment
+Improved error handling
+👩‍💻 Author
+
+Shabina Shaikh
+
+GitHub: https://github.com/shabina30shaikh-crypto
