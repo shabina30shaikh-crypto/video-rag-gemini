@@ -38,17 +38,17 @@ Google Generative AI SDK
 Python-dotenv
 Pillow
 ⚙️ Installation
-1. Clone the Repository
+Clone the Repository
 git clone https://github.com/shabina30shaikh-crypto/video-rag-gemini.git
 cd video-rag-gemini
-2. Create a Virtual Environment
+Create a Virtual Environment
 python -m venv venv
-3. Activate the Virtual Environment
+Activate the Virtual Environment
 
 Windows PowerShell:
 
 .\venv\Scripts\Activate.ps1
-4. Install Dependencies
+Install Dependencies
 pip install -r requirements.txt
 🔑 Gemini API Key Setup
 Create a Gemini API key using Google AI Studio.
