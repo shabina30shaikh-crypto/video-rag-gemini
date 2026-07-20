@@ -29,6 +29,7 @@ User Asks a Question
 Gemini Multimodal Analysis
      ↓
 Context-Aware AI Response
+```
 🛠️ Tech Stack
 Python
 Streamlit
